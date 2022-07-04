@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="tip-calculator">
+      <section class="top-page">
+        <h1 class="heading">SPLI</h1>
+        <h1 class="heading">TTER</h1>
+      </section>
+      <section class="bottom-page">
+        <article class="top-container">
+          <div class="item-1 item">
+            <p class="title">bill</p>
+            <div class="input-container">
+              <img src="images/icon-dollar.svg" alt="" class="dollar-sign" />
+              <input type="text" class="bill-input" value="1" />
+            </div>
+            <span class="bill-warning warning" hidden
+              >Bill amount has to be greater than 0</span
+            >
+          </div>
+          <div class="item item-2">
+            <p class="title">Select Tip %</p>
+            <div class="group-of-tips">
+              <div class="tip tip-1">
+                <p class="tip-value">5%</p>
+              </div>
+              <div class="tip tip-2">
+                <p class="tip-value">10%</p>
+              </div>
+              <div class="tip tip-3">
+                <p class="tip-value">15%</p>
+              </div>
+              <div class="tip tip-4">
+                <p class="tip-value">25%</p>
+              </div>
+              <div class="tip tip-5">
+                <p class="tip-value">50%</p>
+              </div>
+              <div class="tip tip-custom">
+                <input
+                  placeholder="Custom"
+                  type="text"
+                  class="custom-tip-value"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="item item-3">
+            <p class="title">Number of People</p>
+            <div class="input-container">
+              <img
+                src="images/icon-person.svg"
+                alt="person"
+                class="people-icon"
+              />
+              <input type="text" class="no-of-people-input" value="1" />
+            </div>
+            <span class="people-warning warning" hidden
+              >Number of people has to be greater than 0</span
+            >
+          </div>
+        </article>
+        <article class="bottom-container">
+          <div class="amount-container">
+            <div class="title-container">
+              <p class="dark-text">Tip Amount</p>
+              <p class="light-text">/person</p>
+            </div>
+            <p class="amount-value">$<span class="real-value">0</span></p>
+          </div>
+          <div class="total-container">
+            <div class="title-container">
+              <p class="dark-text">Total</p>
+              <p class="light-text">/person</p>
+            </div>
+            <p class="amount-value">$<span class="real-value">0</span></p>
+          </div>
+          <button class="reset-btn" onclick="reset_btn_clicked()">RESET</button>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
